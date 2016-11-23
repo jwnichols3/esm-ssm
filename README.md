@@ -24,4 +24,4 @@ The process to refactor this code started in 2006 and was halted during the fina
 
 Much of what I learned during the refactoring process has evolved into known techniques, such as test driven development.
 
-The next generation solution started development in 2006 as part of a Enterprise Self Service Application (ESSA). This was based on Java / JBoss and used message bus solutions on the agent and at the server. While alpha and beta versions of that solution were code complete, the solution deployment was shelved due to the financial crisis and change in management.
+The next generation solution started development in 2006 as part of a Enterprise Self Service Platform (ESS Agent and ESS Bus). This was based on Java / JBoss. While alpha and beta versions of that solution were code complete, the solution deployment was shelved due to the financial crisis and change in management.
