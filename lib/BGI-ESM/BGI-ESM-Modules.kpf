@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="8A3AA028-2CE7-4BA6-8EAD-4E4A500D529D" name="BGI-ESM-Modules" kpf_version="2">
+<preference-set id="">
+  <string id="import_exclude_matches">*.*~;*.bak;*.tmp;CVS;.#*;*.pyo;*.pyc;.svn;*%*;kpf;*.txt;*.log</string>
+  <string id="import_dirname">C:\code\vpo\BGI-ESM</string>
+  <string id="import_include_matches"></string>
+</preference-set>
+<file url="Makefile.PL" id="4E3C33DB-D8CF-4963-8744-58FD49FBCFDF" name="Makefile.PL">
+<preference-set id="">
+  <string id="lastInvocation">default</string>
+<preference-set id="Invocations">
+<preference-set id="default">
+  <string id="postparams"></string>
+  <string id="warnings">enabled</string>
+  <boolean id="show-dialog">1</boolean>
+  <boolean id="use-console">0</boolean>
+  <string id="getparams"></string>
+  <string id="mpostparams"></string>
+  <string id="filename">C:\code\vpo\BGI-ESM\Makefile.PL</string>
+  <string id="request-method">GET</string>
+  <long id="debugger.io-port">9011</long>
+  <string id="params"></string>
+  <string id="userCGIEnvironment"></string>
+  <string id="posttype">application/x-www-form-urlencoded</string>
+  <string id="documentRoot"></string>
+  <string id="cookieparams"></string>
+  <string id="userEnvironment"></string>
+  <boolean id="sim-cgi">0</boolean>
+  <string id="cwd"></string>
+  <string id="executable-params"></string>
+</preference-set>
+</preference-set>
+</preference-set>
+</file>
+<folder url="lib" id="4E5F29DF-2D1B-4240-91BF-C20F7EB77E21" name="lib">
+<preference-set id="">
+  <string id="import_dirname">C:\code\vpo\BGI-ESM\lib</string>
+</preference-set>
+<folder url="lib/BGI" id="68297A74-A135-432F-B589-A4FFBB0FDE3D" name="BGI">
+<preference-set id="">
+</preference-set>
+<folder url="lib/BGI/ESM" id="9B0E9548-1E73-4845-9078-29C42430784B" name="ESM">
+<preference-set id="">
+</preference-set>
+<folder url="lib/BGI/ESM/Common" id="1B5F7D88-1BF9-4383-8882-416AADF1DF1B" name="Common">
+<file url="lib/BGI/ESM/Common/INC.pm" id="C0F39DA6-9EF5-4E45-A371-7C2CFAE33F8D" name="INC.pm">
+</file>
+<file url="lib/BGI/ESM/Common/Shared.pm" id="EF7ECDC7-859A-4631-9EDD-F23FA7CB0B4F" name="Shared.pm">
+</file>
+<file url="lib/BGI/ESM/Common/Variables.pm" id="88443B5F-4628-4BDA-B011-CB448348F1E4" name="Variables.pm">
+</file>
+<file url="lib/BGI/ESM/Common/Debug.pm" id="32182DE0-5530-46DB-836E-C146FEF31FBA" name="Debug.pm">
+</file>
+<file url="lib/BGI/ESM/Common/Network.pm" id="F4A089F2-81C7-41D6-81E4-F874ABF0F069" name="Network.pm">
+</file>
+<file url="lib/BGI/ESM/Common/ActivePerlUtils.pm" id="554E1F38-1776-4772-A6D0-CA6852021A50" name="ActivePerlUtils.pm">
+</file>
+<file url="lib/BGI/ESM/Common/VpoAgent.pm" id="423950CF-A45D-4A45-B872-74B7A8FB74A4" name="VpoAgent.pm">
+</file>
+</folder>
+<folder url="lib/BGI/ESM/SelfService" id="B87A68CB-6A82-437C-8634-21AEC80072AD" name="SelfService">
+<file url="lib/BGI/ESM/SelfService/ParseAlertConfig.pm" id="2C4E8555-3EC4-4E91-B301-BEE652CDEDF4" name="ParseAlertConfig.pm">
+</file>
+<file url="lib/BGI/ESM/SelfService/SsmShared.pm" id="62704FCC-EF13-48EB-8C13-4E535E004C8E" name="SsmShared.pm">
+</file>
+<file url="lib/BGI/ESM/SelfService/SsmStatusReport.pm" id="C8A8791D-D692-4BB1-8E42-FB4476DC747D" name="SsmStatusReport.pm">
+</file>
+<file url="lib/BGI/ESM/SelfService/SsmTesting.pm" id="30C93CD0-576E-4954-99A4-AFE7EBEFBB3A" name="SsmTesting.pm">
+</file>
+<file url="lib/BGI/ESM/SelfService/Performance.pm" id="F9AE3FB5-4AD2-463D-AFDF-6ABB5C4B0FA0" name="Performance.pm">
+</file>
+<file url="lib/BGI/ESM/SelfService/SsmInfo.pm" id="DC595C15-4380-49F9-AA7B-87A1FB54E5ED" name="SsmInfo.pm">
+</file>
+</folder>
+<folder url="lib/BGI/ESM/VpoServer" id="13A66DE2-E731-46D5-A510-1E54BB640B1C" name="VpoServer">
+<file url="lib/BGI/ESM/VpoServer/Alarmpoint.pm" id="15CE567E-6784-4E07-9113-2C10ADF5F0CB" name="Alarmpoint.pm">
+</file>
+<file url="lib/BGI/ESM/VpoServer/AlternateNotification.pm" id="18E4B3C0-2565-4BBD-9254-CFA08B0D491F" name="AlternateNotification.pm">
+</file>
+<file url="lib/BGI/ESM/VpoServer/DataMap.pm" id="CD4B76A0-72EA-450C-A213-67A698E1BE5F" name="DataMap.pm">
+</file>
+<file url="lib/BGI/ESM/VpoServer/LookingGlass.pm" id="08C55AA2-6ACC-473C-8A0F-3BB232BEB047" name="LookingGlass.pm">
+</file>
+<file url="lib/BGI/ESM/VpoServer/Peregrine.pm" id="11E9F229-879C-4D8D-9BC2-47422FDF2359" name="Peregrine.pm">
+</file>
+<file url="lib/BGI/ESM/VpoServer/ServerCommon.pm" id="40ED5064-A0F3-4F80-8B21-0531E5475A1A" name="ServerCommon.pm">
+</file>
+<file url="lib/BGI/ESM/VpoServer/SuppressCheck.pm" id="B525D9E0-946D-4A01-AD9C-8B302DA32253" name="SuppressCheck.pm">
+</file>
+<file url="lib/BGI/ESM/VpoServer/VPO.pm" id="DDD4C8F7-7A99-4220-AD9B-E02BF6374AD4" name="VPO.pm">
+</file>
+</folder>
+<folder url="lib/BGI/ESM/Compile" id="36060A56-BD3B-4C65-AC0F-2A04E437CDA8" name="Compile">
+<preference-set id="">
+</preference-set>
+<file url="lib/BGI/ESM/Compile/Ssm.pm" id="4A08CCAF-848D-4B7E-B2B7-1B0729AE7CD1" name="Ssm.pm">
+<preference-set id="">
+  <string id="lastInvocation">default</string>
+<preference-set id="Invocations">
+<preference-set id="default">
+  <string id="postparams"></string>
+  <string id="userEnvironment"></string>
+  <string id="posttype">application/x-www-form-urlencoded</string>
+  <string id="getparams"></string>
+  <boolean id="use-console">0</boolean>
+  <string id="warnings">enabled</string>
+  <string id="mpostparams"></string>
+  <string id="filename">C:\code\vpo\BGI-ESM\lib\BGI\ESM\Compile\Ssm.pm</string>
+  <string id="request-method">GET</string>
+  <string id="params"></string>
+  <string id="userCGIEnvironment"></string>
+  <string id="executable-params"></string>
+  <string id="documentRoot"></string>
+  <string id="cookieparams"></string>
+  <boolean id="show-dialog">1</boolean>
+  <boolean id="sim-cgi">0</boolean>
+  <string id="cwd"></string>
+  <long id="debugger.io-port">9011</long>
+</preference-set>
+</preference-set>
+</preference-set>
+</file>
+<file url="lib/BGI/ESM/Compile/VpoDistribute.pm" id="155B4A0C-91DB-49C3-936F-92195C8CAFF0" name="VpoDistribute.pm">
+<preference-set id="">
+  <string id="lastInvocation">default</string>
+<preference-set id="Invocations">
+<preference-set id="default">
+  <string id="postparams"></string>
+  <string id="userEnvironment"></string>
+  <string id="posttype">application/x-www-form-urlencoded</string>
+  <string id="getparams"></string>
+  <boolean id="use-console">1</boolean>
+  <string id="warnings">enabled</string>
+  <string id="mpostparams"></string>
+  <string id="filename">C:\code\vpo\BGI-ESM\lib\BGI\ESM\Compile\VpoDistribute.pm</string>
+  <string id="request-method">GET</string>
+  <string id="params"></string>
+  <string id="userCGIEnvironment"></string>
+  <string id="executable-params"></string>
+  <string id="documentRoot"></string>
+  <string id="cookieparams"></string>
+  <boolean id="show-dialog">1</boolean>
+  <boolean id="sim-cgi">0</boolean>
+  <string id="cwd"></string>
+  <long id="debugger.io-port">9011</long>
+</preference-set>
+</preference-set>
+</preference-set>
+</file>
+<file url="lib/BGI/ESM/Compile/Common.pm" id="255F6CEA-65D1-4EBB-8702-63415FCAC863" name="Common.pm">
+</file>
+<file url="lib/BGI/ESM/Compile/VpoServer.pm" id="6C921DD4-5D0B-4BED-8730-D2ED8D3D3167" name="VpoServer.pm">
+</file>
+</folder>
+</folder>
+</folder>
+</folder>
+<folder url="t" id="58AA79F4-8D2A-4F5D-A1BE-90318F29000D" name="t">
+<preference-set id="">
+  <string id="import_dirname">C:\code\vpo\BGI-ESM\t</string>
+</preference-set>
+<file url="t/BGI-ESM-Common-INC.t" id="84E80D19-9C9D-4812-9423-878834B674EB" name="BGI-ESM-Common-INC.t">
+</file>
+<file url="t/BGI-ESM-Common-Shared.t" id="92F22274-DD05-4257-98ED-D09E113CF826" name="BGI-ESM-Common-Shared.t">
+<preference-set id="">
+  <string id="lastInvocation">default</string>
+<preference-set id="Invocations">
+<preference-set id="default">
+  <string id="postparams"></string>
+  <string id="warnings">enabled</string>
+  <boolean id="show-dialog">1</boolean>
+  <boolean id="use-console">0</boolean>
+  <string id="getparams"></string>
+  <string id="mpostparams"></string>
+  <string id="filename">C:\code\vpo\BGI-ESM\t\BGI-ESM-Common-Shared.t</string>
+  <string id="request-method">GET</string>
+  <long id="debugger.io-port">9011</long>
+  <string id="params"></string>
+  <string id="userCGIEnvironment"></string>
+  <string id="posttype">application/x-www-form-urlencoded</string>
+  <string id="documentRoot"></string>
+  <string id="cookieparams"></string>
+  <string id="userEnvironment"></string>
+  <boolean id="sim-cgi">0</boolean>
+  <string id="cwd"></string>
+  <string id="executable-params"></string>
+</preference-set>
+</preference-set>
+</preference-set>
+</file>
+<file url="t/BGI-ESM-Common-Variables.t" id="10E0E13C-A104-4297-8BED-2FBB9148C0E0" name="BGI-ESM-Common-Variables.t">
+<preference-set id="">
+  <string id="lastInvocation">default</string>
+<preference-set id="Invocations">
+<preference-set id="default">
+  <string id="postparams"></string>
+  <string id="warnings">enabled</string>
+  <boolean id="use-console">0</boolean>
+  <string id="getparams"></string>
+  <string id="filename">C:\code\vpo\BGI-ESM\t\BGI-ESM-Common-Variables.t</string>
+  <string id="mpostparams"></string>
+  <boolean id="show-dialog">1</boolean>
+  <string id="userCGIEnvironment"></string>
+  <string id="request-method">GET</string>
+  <string id="params"></string>
+  <string id="executable-params"></string>
+  <string id="posttype">application/x-www-form-urlencoded</string>
+  <string id="documentRoot"></string>
+  <string id="cookieparams"></string>
+  <string id="userEnvironment"></string>
+  <boolean id="sim-cgi">0</boolean>
+  <string id="cwd"></string>
+  <long id="debugger.io-port">9011</long>
+</preference-set>
+</preference-set>
+</preference-set>
+</file>
+<file url="t/BGI-ESM-SelfService-Testing.t" id="6AEB9DD8-99A2-484E-B904-161BA06905A9" name="BGI-ESM-SelfService-Testing.t">
+</file>
+<file url="t/BGI-ESM-VpoServer-Alarmpoint.t" id="F438EBFF-3D88-4A35-BC69-9B89D60A95AD" name="BGI-ESM-VpoServer-Alarmpoint.t">
+</file>
+<file url="t/BGI-ESM-VpoServer-ServerCommon.t" id="E21E7A72-5AC0-45B9-8292-34D649E87FD7" name="BGI-ESM-VpoServer-ServerCommon.t">
+</file>
+<file url="t/BGI-ESM-VpoServer.t" id="27C12FE0-5374-439D-A8A5-696AF475C60E" name="BGI-ESM-VpoServer.t">
+</file>
+<file url="t/BGI-ESM-Compile-Ssm.t" id="E0A7850A-ADF6-43E1-95C6-FABEC73C22A0" name="BGI-ESM-Compile-Ssm.t">
+<preference-set id="">
+  <string id="lastInvocation">default</string>
+<preference-set id="Invocations">
+<preference-set id="default">
+  <string id="postparams"></string>
+  <string id="userEnvironment"></string>
+  <string id="getparams"></string>
+  <boolean id="use-console">0</boolean>
+  <string id="warnings">enabled</string>
+  <string id="executable-params"></string>
+  <string id="mpostparams"></string>
+  <boolean id="show-dialog">1</boolean>
+  <string id="request-method">GET</string>
+  <string id="params"></string>
+  <string id="userCGIEnvironment"></string>
+  <string id="posttype">application/x-www-form-urlencoded</string>
+  <string id="documentRoot"></string>
+  <string id="cookieparams"></string>
+  <string id="filename">C:\code\vpo\BGI-ESM\t\BGI-ESM-Compile-Ssm.t</string>
+  <boolean id="sim-cgi">0</boolean>
+  <string id="cwd"></string>
+  <long id="debugger.io-port">9011</long>
+</preference-set>
+</preference-set>
+</preference-set>
+</file>
+<file url="t/BGI-ESM-Compile-VpoDistribute.t" id="EE82E3B3-0169-48B1-899D-687B3B918701" name="BGI-ESM-Compile-VpoDistribute.t">
+<preference-set id="">
+  <string id="lastInvocation">default</string>
+<preference-set id="Invocations">
+<preference-set id="default">
+  <string id="postparams"></string>
+  <string id="warnings">enabled</string>
+  <boolean id="show-dialog">1</boolean>
+  <boolean id="use-console">0</boolean>
+  <string id="getparams"></string>
+  <string id="mpostparams"></string>
+  <string id="filename">C:\code\vpo\BGI-ESM\t\BGI-ESM-Compile-VpoDistribute.t</string>
+  <string id="request-method">GET</string>
+  <long id="debugger.io-port">9011</long>
+  <string id="params"></string>
+  <string id="userCGIEnvironment"></string>
+  <string id="posttype">application/x-www-form-urlencoded</string>
+  <string id="documentRoot"></string>
+  <string id="cookieparams"></string>
+  <string id="userEnvironment"></string>
+  <boolean id="sim-cgi">0</boolean>
+  <string id="cwd"></string>
+  <string id="executable-params"></string>
+</preference-set>
+</preference-set>
+</preference-set>
+</file>
+<file url="t/BGI-ESM-Common-Debug.t" id="3112CA6F-B8BA-4C9D-AA9F-C7F646F9B5E6" name="BGI-ESM-Common-Debug.t">
+<preference-set id="">
+  <string id="lastInvocation">default</string>
+<preference-set id="Invocations">
+<preference-set id="default">
+  <string id="postparams"></string>
+  <string id="warnings">enabled</string>
+  <boolean id="show-dialog">1</boolean>
+  <boolean id="use-console">0</boolean>
+  <string id="getparams"></string>
+  <string id="mpostparams"></string>
+  <string id="executable-params"></string>
+  <string id="filename">C:\code\vpo\BGI-ESM\t\BGI-ESM-Common-Debug.t</string>
+  <string id="request-method">GET</string>
+  <string id="params"></string>
+  <string id="userCGIEnvironment"></string>
+  <string id="posttype">application/x-www-form-urlencoded</string>
+  <string id="documentRoot"></string>
+  <string id="cookieparams"></string>
+  <string id="userEnvironment"></string>
+  <boolean id="sim-cgi">0</boolean>
+  <string id="cwd"></string>
+  <long id="debugger.io-port">9011</long>
+</preference-set>
+</preference-set>
+</preference-set>
+</file>
+<file url="t/BGI-ESM-Common-ActivePerlUtils.t" id="E41EE8DD-CB1F-45C7-9BE5-DF6E2ED3F307" name="BGI-ESM-Common-ActivePerlUtils.t">
+</file>
+<file url="t/BGI-ESM-Common-Network.t" id="3BDEA914-F71B-48E9-A49C-00FC5BF26F1C" name="BGI-ESM-Common-Network.t">
+</file>
+<file url="t/BGI-ESM-SelfService-Performance.t" id="0990FF6F-AE02-408B-AF98-A1992AEC6129" name="BGI-ESM-SelfService-Performance.t">
+</file>
+<file url="t/BGI-ESM-Common-VpoAgent.t" id="A887B207-986C-4EA4-B86D-BEE8650C333A" name="BGI-ESM-Common-VpoAgent.t">
+<preference-set id="">
+  <string id="lastInvocation">default</string>
+<preference-set id="Invocations">
+<preference-set id="default">
+  <string id="postparams"></string>
+  <string id="warnings">enabled</string>
+  <boolean id="show-dialog">1</boolean>
+  <boolean id="use-console">0</boolean>
+  <string id="getparams"></string>
+  <string id="mpostparams"></string>
+  <string id="filename">C:\code\vpo\BGI-ESM\t\BGI-ESM-Common-VpoAgent.t</string>
+  <string id="request-method">GET</string>
+  <long id="debugger.io-port">9011</long>
+  <string id="params"></string>
+  <string id="userCGIEnvironment"></string>
+  <string id="posttype">application/x-www-form-urlencoded</string>
+  <string id="documentRoot"></string>
+  <string id="cookieparams"></string>
+  <string id="userEnvironment"></string>
+  <boolean id="sim-cgi">0</boolean>
+  <string id="cwd"></string>
+  <string id="executable-params"></string>
+</preference-set>
+</preference-set>
+</preference-set>
+</file>
+<file url="t/BGI-ESM-SelfService-SsmInfo.t" id="C2849B4F-1762-47CA-BA4A-5D67270EE0E8" name="BGI-ESM-SelfService-SsmInfo.t">
+<preference-set id="">
+  <string id="lastInvocation">default</string>
+<preference-set id="Invocations">
+<preference-set id="default">
+  <string id="postparams"></string>
+  <string id="userEnvironment"></string>
+  <string id="posttype">application/x-www-form-urlencoded</string>
+  <string id="getparams"></string>
+  <boolean id="use-console">0</boolean>
+  <string id="warnings">enabled</string>
+  <string id="mpostparams"></string>
+  <string id="filename">C:\code\vpo\BGI-ESM\t\BGI-ESM-SelfService-SsmInfo.t</string>
+  <string id="request-method">GET</string>
+  <string id="params"></string>
+  <string id="userCGIEnvironment"></string>
+  <string id="executable-params"></string>
+  <string id="documentRoot"></string>
+  <string id="cookieparams"></string>
+  <boolean id="show-dialog">1</boolean>
+  <boolean id="sim-cgi">0</boolean>
+  <string id="cwd"></string>
+  <long id="debugger.io-port">9011</long>
+</preference-set>
+</preference-set>
+</preference-set>
+</file>
+<file url="t/tmppevkcu.html" id="01DFD3A8-BF5A-4B8B-BF63-3B6B8D5A413D" name="tmppevkcu.html">
+</file>
+<file url="t/BGI-ESM-Compile-Common.t" id="EDBDB644-C7DD-47BC-B2E8-249D03384B6E" name="BGI-ESM-Compile-Common.t">
+</file>
+<file url="t/BGI-ESM-Compile-VpoServer.t" id="99488984-0823-4431-BBEA-18C5DF64653E" name="BGI-ESM-Compile-VpoServer.t">
+</file>
+<file url="t/BGI-ESM-VpoServer-DataMap.t" id="E82A9A12-EF1D-4067-9E5A-76A73B6CC9C8" name="BGI-ESM-VpoServer-DataMap.t">
+</file>
+<file url="t/BGI-ESM-VpoServer-LookingGlass.t" id="944BB7E2-B4FD-4FAE-8E0F-4EC8A7AB834D" name="BGI-ESM-VpoServer-LookingGlass.t">
+</file>
+<file url="t/BGI-ESM-VpoServer-Peregrine.t" id="57B01053-EA4E-4DE1-9CBA-5F9D0DF9D730" name="BGI-ESM-VpoServer-Peregrine.t">
+</file>
+<file url="t/BGI-ESM-VpoServer-SuppressCheck.t" id="2DCC0E19-F2C7-4720-8D10-286332816A92" name="BGI-ESM-VpoServer-SuppressCheck.t">
+</file>
+<file url="t/BGI-ESM-VpoServer-VPO.t" id="48EDC01C-17DD-4030-BD30-E54D08FB67B3" name="BGI-ESM-VpoServer-VPO.t">
+</file>
+</folder>
+<ProjectRef url="BGI-ESM-Modules.kpf" id="4B875EA9-14B9-49AC-B4C6-C774200741E0" name="BGI-ESM-Modules.kpf">
+</ProjectRef>
+<file url="Changes" id="354DBB58-5793-4F97-97FE-41E1D657F31B" name="Changes">
+</file>
+<file url="MANIFEST" id="9D8B0EC7-5717-436E-B54D-46F00F03220C" name="MANIFEST">
+</file>
+<file url="README" id="75BA16DE-75BF-46BE-B380-777A6EB12FCD" name="README">
+</file>
+<file url="Makefile" id="BA0A0985-B65F-4B3B-A26D-AE1CEABB5611" name="Makefile">
+</file>
+<folder url="build" id="7CEE8CBE-9A58-4FC2-A524-EA6D106D57E2" name="build">
+<file url="build/1" id="FD3C92B8-231E-4239-80A1-61A0053CF271" name="1">
+</file>
+<file url="build/BGI-ESM-prove.pl" id="EA8DA373-6096-40E0-9BF4-6199277B7400" name="BGI-ESM-prove.pl">
+</file>
+</folder>
+</project>
