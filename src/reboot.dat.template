@@ -1,0 +1,81 @@
+# v1.00 reboot.dat.template
+# This is the reboot.monitor configuration file.  Information contained
+# in this file will be used by the reboot monitor to determine
+# what to do.  Each line represents a physical activity that will
+# be performed by the monitor. 
+#
+# the reboot.dat.whatever files should be located in:
+#    /<mountpoint>/.ssm - UNIX    (the mountpoint being the application mountpoint)
+#    n/a                - Windows (the reboot monitor only runs on the VPO server)
+#
+# The description of each record is below.  Each record is a 
+# series of arguments that are evaluated.  
+#
+# Argument       Description 
+# -------------  -------------------------------------------------------------------
+#
+# node=          - the name of the node to alert when rebooted
+#
+# app=           - This is the name of the application responsible for the 
+#                    event.  This value maps to the VPO Message Group, gets 
+#                    translated to the Peregrine queue, and to the 
+#                    corresponding AlarmPoint group.
+#
+# sev=           - Optional     Default = major
+#                  These are the standard VPO severity levels:
+#                     Major and Critical are passed to Peregrine then on 
+#                        to AlarmPoint for notification.  
+#                        Critical 	= Peregrine Sev 2
+#                        Major 	        = Peregrine Sev 3
+#                     Minor and Warning are just passed to Peregrine.
+#                        Minor 	        = Peregrine Sev 4
+#                        Warning 	= Peregrine Sev 5
+#                     Normal doesn't get passed.
+#
+# desctiption=   - Optional    Default = Server Name
+#                    A readable description used to represent the server
+#
+# action=        - Optional     Default = "no action performed"
+#                  Perform a "pre-canned" action when this message occurs.
+#                  Pre-canned Action values:
+#                  EMAIL - send an e-mail as well as open a Peregrine 
+#                    Ticket and go through AlarmPoint notification.
+#                  EMAILfyi - send a courtousy e-mail only.  No Peregrine 
+#                    Ticket or AlarmPoint notification will be triggered, 
+#                    no matter the severity.  
+#                  COMFORT - send a comfort message via sms and/or email
+#                  Message Details:
+#                  EMAIL and EMAILfyi - the Detail is the email addresses 
+#                    to send the message - multiple addresses should be 
+#                    separated by a semi-colon (;).
+#                  COMFORT - the details are the Alarmpoint group name or person ID
+#                    (delimit multiple with a semi-colon (;)), and the method
+#                    (email, sms, or both) 
+#                  More Information:
+#                  For more information, see http://esm/ssm
+#
+# start=         - Optional    Default = 00
+#                    The start hour that monitoring of the fileage occurs.
+#                    NOTE:   08 means monitoring starts at 8:00am
+#                ***WARNING*** Since the reboot monitor runs on the management server
+#                              the start hour has to be translated to: 
+#                              PST time (on rdc server) and UTC time (on ldn server)
+#
+# stop=          - Optional    Default = 24
+#                    The stop hour that monitoring of the fileage occurs.  
+#                    NOTE:   17 means monitoring stops at 6:00pm
+#                ***WARNING*** Since the reboot monitor runs on the management server
+#                              the stop hour has to be translated to: 
+#                              PST time (on rdc server) and UTC time (on ldn server)
+#
+# DayOfWeek      - Optional    Default = all
+#                    The day of week to monitor the age of the file.
+#                    Options are the three letter abbreviation delimited by comma
+#                    Sun, Mon, Tue, Wed, Thu, Fri, Sat or All
+#
+# Examples:
+# > Alert when a node is rebooted: simple
+#   app=unix node=rdcuxsrv054 sev=major
+# > Alert when a node is rebooted during LDN work hours (note the start and stop are in PST)
+#   app=unix node=ldnuxsrv003 sev=major start=00 stop=08 dayofweek=mon, tue, wed, thu, fri
+#

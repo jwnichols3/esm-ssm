@@ -1,0 +1,93 @@
+==Pre-canned action help==
+
+Valid pre-canned actions:
+ - Email
+ - EmailFYI
+ - Comfort
+ 
+--Email Usage--
+  logfile: action=email,email address, email subject line
+  vposend: vposend -a app -s severity -m "message" -A "email, email addresses, email subject line"
+ 
+--EmailFYI Usage--
+  logfile: action=emailfyi,email address, email subject line
+  vposend: vposend -a app -s severity -m "message" -A "emailfyi, email address, email subject line"
+ 
+--Comfort Usage--
+  logfile: action=comfort, ap_group_name(s) and/or ap_person_id(s), method
+  vposend: vposend -a app -s severity -m "message" -A "comfort, ap_group_name(s) and/or ap_person_id(s), method"
+ 
+==Notes==
+Email and EmailFYI
+-- The email addresses are semi-colon delimited (;). 
+-- The email subject is optional.
+Comfort
+-- The alarmpoint group names and / or alarmpoint person ids are semi-colon delimited (;).
+-- The methods are semi-colon delimited (;).
+-- The valid methods are:
+   o> SMS   - sends sms message
+   o> Pager - sends pager message
+   o> Email - sends email
+   o> All   - (default) sends to pager, sms, and email (whatever is defined in Alarmpoint)
+
+==Examples==
+
+--Logfile EMail--
+... __vpo__ app=app sev=Minor message="message" action=email, john@bgi.com; bob@bgi.com, Error on `hostname`
+
+--Logfile EMailFYI--
+... __vpo__ app=app sev=Minor message="mssg" action=emailfyi, john@bgi.com; bob@bgi.com, Error on `hostname`
+
+--Comfort--
+... __vpo__ app=app sev=Minor message="msg" action=comfort, support-esm; 9991234, pager; sms
+
+
+--vposend Email--
+vposend -a app -s Minor -m "message" -A "email, john@bgi.com; bob@bgi.com, Error processing"
+
+--vposend EmailFYI--
+vposend -a app -s Minor -m "message" -A "emailfyi, john@bgi.com; bob@bgi.com, Error processing"
+
+--vposend Comfort--
+vposend -a app -s Minor -m "message" -A "comfort, support-esm; 9991234, pager; sms"
+
+==Process Reference==
+This chart is a reference for what happens to SSM events
+ 
+-----------+---------+-----+-----------+-------+------------------------------
+Pre-canned | Message | VPO | Peregrine | Alarm | Pre-canned Action 
+ Action    |   Type  |     |  Ticket   | Point | Taken
+-----------+---------+-----+-----------+-------+------------------------------
+(none)     |  (none) |  X  |    X      |   X*  |  none
+-----------+---------+-----+-----------+-------+------------------------------
+Email      |  (none) |  X  |    X      |   X*  |  Email sent
+-----------+---------+-----+-----------+-------+------------------------------
+EmailFYI   |  (none) |  X  |           |       |  ONLY an Email sent
+-----------+---------+-----+-----------+-------+------------------------------
+Comfort    |  (none) |  X  |           |       |  Alarmpoint comfort message
+-----------+---------+-----+-----------+-------+------------------------------
+Email and  |  (none) |  X  |    X      |   X*  |  Email sent
+EmailFYI^  |         |     |           |       |
+-----------+---------+-----+-----------+-------+------------------------------
+Email      |   TEST  |  X  |           |       |  none
+-----------+---------+-----+-----------+-------+------------------------------
+EmailFYI   |   TEST  |  X  |           |       |  none
+-----------+---------+-----+-----------+-------+------------------------------
+Comfort    |   TEST  |  X  |           |       |  none
+-----------+---------+-----+-----------+-------+------------------------------
+Email and  |   TEST  |  X  |           |       |  none
+EmailFYI^  |         |     |           |       |
+-----------+---------+-----+-----------+-------+------------------------------
+Email      |    QA   |  X  |           |       |  Email sent
+-----------+---------+-----+-----------+-------+------------------------------
+EmailFYI   |    QA   |  X  |           |       |  Email sent
+-----------+---------+-----+-----------+-------+------------------------------
+Comfort    |    QA   |  X  |           |       |  Alarmpoint comfort message
+-----------+---------+-----+-----------+-------+------------------------------
+Email and  |    QA   |  X  |           |       |  Email sent
+EmailFYI^  |         |     |           |       |
+-----------+---------+-----+-----------+-------+------------------------------
+ * On Major and Critical messages only.
+ ^ This is considered a "stacked" action.
+
+=== v1.8 ===

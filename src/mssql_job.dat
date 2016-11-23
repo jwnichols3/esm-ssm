@@ -1,0 +1,17 @@
+# This is the mssql job configuration file.  Information contained
+# in this file will be used by the mssql job auto action to determine
+# what to do.  
+#
+# The description of each record is below.  Each record is a 
+# series of arguments that are evaluated.  
+#
+# Argument       Description 
+# -------------  -----------------------------------------------------------
+#
+# server=        - Windows - Name of server database is on
+#
+# dbname=        - Name of database
+#
+# times=         - The number of times the error occurs before sending a message
+#
+# server=rdcntsql402 dbname=test_Db times=5

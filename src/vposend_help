@@ -1,0 +1,51 @@
+Usage: vposend [-D] -a application -s severity -m "message"
+           [ -k message key ] [ -A action,detail ] [ -t msg-type ]
+    where:
+         -a This is the name of the Application. This value maps
+            to the VPO message group, to the Peregrine queue and
+            AlarmPoint Group
+         -s Severity. This must be: critical|major|minor|warning|normal
+            Critical and Major events are passed to Peregrine and
+            subsequently to AlarmPoint
+            Minor and Warning are just passed to Peregrine
+            Normal does not get passed.
+            Peregrine Severity matching:
+               Critical = Peregrine Sev 2
+               Major    = Peregrine Sev 3
+               Minor    = Peregrine Sev 4
+               Warning  = Peregrine Sev 5
+         -m Message text. Note: protect white space in the text,
+            action, detail,  fields by using double quotes 
+            ( i.e. -t "this is a test message" )
+         -k Key to use for duplicate message type suppression
+            If a key is defined, all other messages that are
+            generated with the same key (but possibly different
+            message text) are suppressed from processing in VPO
+         -A Action to run and the detail parameters required for
+            running the pre-defined action.
+               "email, recipient; recipient, email subject line"
+               "emailfyi, recipient; recipient, email subject line"
+               "comfort, ap group(s) or ap person_id(s), method (pager, sms, or email)"
+
+               NOTE: If multiple actions are desired then 
+                     multiple -A parameters must be used.  Do
+                     not add any other arguments between the 
+                     multiple -A parameters
+                    valid -A "email,recipient" -a "emailfyi,recipient"
+                          -A Help
+                  invalid -A "email,recipient" -t type -A "emailfyi,recipient"
+         -t Type. Used for Testing and QA. Any messages generated
+            with the Type QA or TEST will be proceesed by VPO
+            but no escalation to Perrgrine or AlarmPoint will be done
+         -D Debug mode. For testing and developer use
+
+Alternate Usage for ssm logfile processing: 
+    vposend [-D] -f "contents of ssm log file record to be parsed"
+         -f File mode. For sending a SSM file record. In
+            conjunction with -D can be used for testing
+            syntax and function of log file records.
+               - The contents of the file must meet the SSM
+                 log file requirements
+         -D Debug mode. For testing and developer use
+
+=== v1.8 ===

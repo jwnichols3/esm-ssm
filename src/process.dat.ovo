@@ -1,0 +1,117 @@
+# Based on v2.10 of process.dat.ovo
+#
+# This is the process configuration file.  Information contained
+# in this file will be used by the process monitor to determine
+# what to do.  Each line represents a physical activity that will
+# be performed by the monitor. 
+#
+# The description of each record is below.  Each record is a 
+# series of arguments that are evaluated.  
+#
+# Argument  Description 
+#
+# process=       - Unix - Process Name as seen by a ps -ef command
+#                  Windows - Process Name or Service Name
+#
+# serviceNT=     - Windows - the name of the service
+#
+#
+# pid=           - This is the pid number of a process.  Due to the dynamic nature
+#                   of PIDs this should be changed programatically.
+#
+## NOTE: one of the above is required (process=, serviceNT=, or pid=
+#
+# parameters=    - Optional    Default - Not Used
+#                    Additional match criteria to uniquely identify the 
+#                    process or service.
+#
+# desctiption=   - Optional    Default = Not Used
+#                    A readable description used to represent the filesys 
+#                      in the error message.
+#
+# min_running=   - Optional    Default = 0
+#                    This value represents the minimum number of processes
+#                      that must be running.
+#
+# max_running=   - Optional    Default = 999
+#                    This value represents the maximum number of processes
+#                      that are allowed to be running.
+#
+# max_runtime=   - Optional    Default = Not Used
+#                    This value represents the maximum time a process is 
+#                      allowed to run.  
+#                      A null value = Must run all the time
+#                      0 = Must never be running
+#                      'n' = Must not run longer then 'n' minutes.
+#
+# app=           - This is the name of the application responsible for the 
+#                    event.  This value maps to the VPO Message Group, gets 
+#                    translated to the Peregrine queue, and to the 
+#                    corresponding AlarmPoint group.
+#
+# sev=           - Optional     Default = major
+#                  These are the standard VPO severity levels:
+#                     Major and Critical are passed to Peregrine then on 
+#                        to AlarmPoint for notification.  
+#                        Critical       = Peregrine Sev 2
+#                        Major          = Peregrine Sev 3
+#                     Minor and Warning are just passed to Peregrine.
+#                        Minor          = Peregrine Sev 4
+#                        Warning        = Peregrine Sev 5
+#                     Normal doesn't get passed.
+#
+# start=         - Optional    Default = 00
+#                    The start hour that monitoring of the filesys occurs.
+#                    NOTE:   08 means monitoring starts at 8:00am
+#
+# stop=          - Optional    Default = 24
+#                    The stop hour that monitoring of the filesys occurs.  
+#                    NOTE:   17 means monitoring stops at 6:00pm
+#
+# DayOfWeek      - Optional    Default = all
+#                    The day of week to monitor the age of the file.
+#                    Options are the three letter abbreviation delimited by comma
+#                    Sun, Mon, Tue, Wed, Thu, Fri, Sat or All
+#
+# action=        - Optional     Default = "no action performed"
+#                  Perform a "pre-canned" action when this message occurs.
+#                  Pre-canned Action values:
+#                  EMAIL - send an e-mail as well as open a Peregrine 
+#                    Ticket and go through AlarmPoint notification.
+#                  EMAILfyi - send a courtousy e-mail only.  No Peregrine 
+#                    Ticket or AlarmPoint notification will be triggered, 
+#                    no matter the severity.  
+#                  Message Details:
+#                  EMAIL and EMAILfyi - the Detail is the email addresses 
+#                    to send the message - multiple addresses should be 
+#                    separated by a semi-colon (;).
+#                  More Information:
+#                  For more information, see Action Examples in this 
+#                    document and/or Self Service Monitoring - Using 
+#                    Pre-canned Actions
+#
+# message_age=   - Optional     Default = 60 minutes
+#                  This value represents the amount of time the monitor will 
+#                    wait before sending a refresh message to VPO.  If the 
+#                    severity level of the event changes, a message will be 
+#                    sent immediately
+#
+# error_times=   - Optional     Default = Not Used
+#                  This value represents the number of times that a error was
+#                    reported to VPO in one day.  If the filesys was reported
+#                    more than 'error_times' then additional error will be sent 
+#                    to VPO which identifies how many times this error has 
+#                    occurred today.
+#
+# source_host    - Optional    Default = localhost  NOTE: UNIX only
+#                    Use this to specify the source host for the alert.
+#                    This is used when a .ssm directory is in a shared
+#                    mount point that is mounted on multiple systems.
+#
+# Examples:
+#
+# process=dummy app=ESM action=emailfyi,emailid@something.com severity=minor max_running=3 error_times=2
+# process=cron  app=unix sev=major source_host=host_name
+#
+# serviceNT=svchost.exe app=windows sev=minor 
+

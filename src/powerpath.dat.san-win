@@ -1,0 +1,129 @@
+# Based on v1.01 of powerpath.dat.template 
+#
+#   please make a copy of this and rename it:
+#   powerpath.dat.<whatever>
+#
+#  The "whatever" being your application name or area of
+#   responsibility (examples: powerpath.dat.unix, powerpath.dat.san).
+#
+# the filesys.dat.whatever files should be located in:
+#    /<mountpoint>/.ssm - UNIX    (the mountpoint being the application mountpoint)
+#    <drive>:\ssm       - Windows (the drive: being the data / application drive)
+#
+# This is the powerpath configuration file.  Information contained
+# in this file will be used by the powerpath monitor to determine
+# what to do.  Each line represents a physical activity that will
+# be performed by the monitor. 
+#
+# The description of each record is below.  Each record is a 
+# series of arguments that are evaluated.  
+#
+# Option         Description 
+# -------------  ---------------------------------------------------------------------
+#
+# issue=        - options:
+#  REQUIRED          
+#                   optimal      - Alert parameters for when something other 
+#                                  than optimal appears in the status of the adapter
+#                   redundancy   - Alert parameters for when one or less adapters show
+#                   powermt_fail - Alert parameters for when running powermt fails
+#
+# app=           - This is the name of the application responsible for the 
+#  REQUIRED          event.  This value maps to the VPO, gets translated
+#                    to the Peregrine queue, and to the corresponding
+#                    AlarmPoint group.
+#
+# sev=           - Optional     Default = major
+#                  These are the standard VPO severity levels:
+#                     Major and Critical are passed to Peregrine then on 
+#                        to AlarmPoint for notification.  
+#                        Critical       = Peregrine Sev 2
+#                        Major          = Peregrine Sev 3
+#                     Minor and Warning are just passed to Peregrine.
+#                        Minor          = Peregrine Sev 4
+#                        Warning        = Peregrine Sev 5
+#                     Normal doesn't get passed.
+#
+# message_age=   - Optional     Default = 60 minutes
+#                  This value represents the amount of time the monitor will 
+#                    wait before sending a refresh message to VPO.  If the 
+#                    severity level of the event changes, a message will be 
+#                    sent immediately
+#
+# action=        - Optional     Default = "no action performed"
+#                  Perform a "pre-canned" action when this message occurs.
+#                  Pre-canned Action values:
+#                  EMAIL - send an e-mail as well as open a Peregrine 
+#                    Ticket and go through AlarmPoint notification.
+#                  EMAILfyi - send a courtousy e-mail only.  No Peregrine 
+#                    Ticket or AlarmPoint notification will be triggered, 
+#                    no matter the severity.  
+#                  COMFORT - send a comfort message via sms and/or email
+#                  Message Details:
+#                  EMAIL and EMAILfyi - the Detail is the email addresses 
+#                    to send the message - multiple addresses should be 
+#                    separated by a semi-colon (;).
+#                  COMFORT - the details are the Alarmpoint group name or person ID
+#                    (delimit multiple with a semi-colon (;)), and the method
+#                    (email, sms, or both) 
+#                  More Information:
+#                  For more information, see http://esm/ssm
+#
+# start=         - Optional    Default = 00
+#                    The start hour that monitoring of the filesys occurs.
+#                    NOTE:   08 means monitoring starts at 8:00am
+#
+# stop=          - Optional    Default = 24
+#                    The stop hour that monitoring of the filesys occurs.  
+#                    NOTE:   17 means monitoring stops at 6:00pm
+#
+# DayOfWeek=     - Optional    Default = all
+#                    The day of week to monitor the age of the file.
+#                    Options are the three letter abbreviation delimited by comma
+#                    Sun, Mon, Tue, Wed, Thu, Fri, Sat or All
+#
+# source_host=   - Optional    Default = localhost  NOTE: UNIX only
+#                    Use this to specify the source host for the alert.
+#                    This is used when a .ssm directory is in a shared
+#                    mount point that is mounted on multiple systems.
+#
+# Alert text:
+#  The following are the text of the messages for each error:
+#
+#  Issue         Text
+#  ------------- -------------------------------------------------------------------------------
+#  Redundancy    When only one adatper is on the list:
+#                 "It appears that the san interface is not redundant on <hostname>. 
+#                  Power path is showing only one san interface present."
+#                When no adapters are on the list:
+#                 "It appears the san interface is not working on <hostname>. 
+#                  Power path is showing no san interfaces present."
+#
+#  Optimal       When anything other than "optimal" appears on the adapter status:
+#                 "Power path is reporting a degraded san interface on <hostname>."
+#
+#  Powermgt_fail When running the powermgt program fails:
+#                 "There were problems running the power path management program on <hostname>."
+
+# EXAMPLES:
+# -- Windows --
+#  filename: e:\ssm\filesys.dat.san
+#
+# app=san issue=redudancy     Sev=major    message_age=120 
+# app=san issue=optimal       Sev=major    message_age=120 
+# app=san issue=powermgt_fail Sev=minor    message_age=120 
+#
+# --- UNIX ----
+#  filename: /data/trademover/.ssm/filesys.dat.san
+# app=san issue=redudancy     Sev=major    message_age=120 
+# app=san issue=optimal       Sev=major    message_age=120 
+# app=san issue=powermgt_fail Sev=minor    message_age=120 
+#
+
+app=san     issue=redudancy     Sev=major    message_age=120 
+app=san     issue=optimal       Sev=major    message_age=120 
+app=san     issue=powermgt_fail Sev=minor    message_age=120 
+
+app=windows issue=redudancy     Sev=major    message_age=120 
+app=windows issue=optimal       Sev=major    message_age=120 
+
