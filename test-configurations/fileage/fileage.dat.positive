@@ -1,0 +1,144 @@
+app=faSglA1t1 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 message_age=30 
+app=faSglA2t1 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 message_age=31 description=test case faSglA2t1 
+app=faSglA2t2 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 message_age=32 description=test case faSglA2t2 action=email, john.nichols@barclaysglobal.com, faSglA2t2 
+app=faSglA2t3 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 message_age=33 description=test case faSglA2t3 action=email, john.nichols@barclaysglobal.com, faSglA2t3 start=08 stop=17 
+app=faSglA2t4 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 message_age=34 description=test case faSglA2t4 action=email, john.nichols@barclaysglobal.com, faSglA2t4 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri 
+app=faSglA2t5 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 message_age=35 description=test case faSglA2t5 action=email, john.nichols@barclaysglobal.com, faSglA2t5 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faSglA3t1 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 message_age=36 action=email, john.nichols@barclaysglobal.com, faSglA3t1 
+app=faSglA3t2 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 message_age=37 action=email, john.nichols@barclaysglobal.com, faSglA3t2 start=08 stop=17 
+app=faSglA3t3 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 message_age=38 action=email, john.nichols@barclaysglobal.com, faSglA3t3 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri 
+app=faSglA3t4 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 message_age=39 action=email, john.nichols@barclaysglobal.com, faSglA3t4 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faSglA4t1 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 message_age=40 start=08 stop=17 
+app=faSglA4t2 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 message_age=41 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri 
+app=faSglA4t3 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 message_age=42 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faSglA5t1 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 message_age=43 dayofweek=mon, tue, wed, thu, fri 
+app=faSglA5t2 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 message_age=44 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faSglA6t1 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 message_age=45 error_times=3
+ 
+app=faSglB1t1 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 description=test case faSglB1t1 
+app=faSglB2t1 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 description=test case faSglB2t1 action=email, john.nichols@barclaysglobal.com, faSglB2t1 
+app=faSglB2t2 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 description=test case faSglB2t2 action=email, john.nichols@barclaysglobal.com, faSglB2t2 start=08 stop=17 
+app=faSglB2t3 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 description=test case faSglB2t3 action=email, john.nichols@barclaysglobal.com, faSglB2t3 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri 
+app=faSglB2t4 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 description=test case faSglB2t4 action=email, john.nichols@barclaysglobal.com, faSglB2t4 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faSglB3t1 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 description=test case faSglB3t1 start=08 stop=17 
+app=faSglB3t2 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 description=test case faSglB3t2 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri 
+app=faSglB3t3 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 description=test case faSglB3t3 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faSglB4t1 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 description=test case faSglB4t1 dayofweek=mon, tue, wed, thu, fri 
+app=faSglB4t2 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 description=test case faSglB4t2 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faSglB5t1 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 description=test case faSglB5t1 error_times=3
+ 
+app=faSglC1t1 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 action=email, john.nichols@barclaysglobal.com, faSglC1t1 
+app=faSglC2t1 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 action=email, john.nichols@barclaysglobal.com, faSglC2t1 start=08 stop=17 
+app=faSglC2t2 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 action=email, john.nichols@barclaysglobal.com, faSglC2t2 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri 
+app=faSglC2t3 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 action=email, john.nichols@barclaysglobal.com, faSglC2t3 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faSglC3t1 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 action=email, john.nichols@barclaysglobal.com, faSglC3t1 dayofweek=mon, tue, wed, thu, fri 
+app=faSglC3t2 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 action=email, john.nichols@barclaysglobal.com, faSglC3t2 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faSglC4t1 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 action=email, john.nichols@barclaysglobal.com, faSglC4t1 error_times=3
+ 
+app=faSglD1t1 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 start=08 stop=17 
+app=faSglD2t1 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri 
+app=faSglD2t2 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faSglD3t1 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 start=08 stop=17 error_times=3
+ 
+app=faSglE1t1 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 dayofweek=mon, tue, wed, thu, fri 
+app=faSglE2t1 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 dayofweek=mon, tue, wed, thu, fri error_times=3
+ 
+app=faSglF1t1 sev=minor dir=c:\test\ file=testFile1.txt age_threshold=1 error_times=3
+
+ 
+app=faAnyA1t1 sev=minor dir=c:\test\ file=@ age_threshold=1 message_age=30 
+app=faAnyA2t1 sev=minor dir=c:\test\ file=@ age_threshold=1 message_age=31 description=test case faAnyA2t1 
+app=faAnyA2t2 sev=minor dir=c:\test\ file=@ age_threshold=1 message_age=32 description=test case faAnyA2t2 action=email, john.nichols@barclaysglobal.com, faAnyA2t2 
+app=faAnyA2t3 sev=minor dir=c:\test\ file=@ age_threshold=1 message_age=33 description=test case faAnyA2t3 action=email, john.nichols@barclaysglobal.com, faAnyA2t3 start=08 stop=17 
+app=faAnyA2t4 sev=minor dir=c:\test\ file=@ age_threshold=1 message_age=34 description=test case faAnyA2t4 action=email, john.nichols@barclaysglobal.com, faAnyA2t4 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri 
+app=faAnyA2t5 sev=minor dir=c:\test\ file=@ age_threshold=1 message_age=35 description=test case faAnyA2t5 action=email, john.nichols@barclaysglobal.com, faAnyA2t5 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faAnyA3t1 sev=minor dir=c:\test\ file=@ age_threshold=1 message_age=36 action=email, john.nichols@barclaysglobal.com, faAnyA3t1 
+app=faAnyA3t2 sev=minor dir=c:\test\ file=@ age_threshold=1 message_age=37 action=email, john.nichols@barclaysglobal.com, faAnyA3t2 start=08 stop=17 
+app=faAnyA3t3 sev=minor dir=c:\test\ file=@ age_threshold=1 message_age=38 action=email, john.nichols@barclaysglobal.com, faAnyA3t3 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri 
+app=faAnyA3t4 sev=minor dir=c:\test\ file=@ age_threshold=1 message_age=39 action=email, john.nichols@barclaysglobal.com, faAnyA3t4 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faAnyA4t1 sev=minor dir=c:\test\ file=@ age_threshold=1 message_age=40 start=08 stop=17 
+app=faAnyA4t2 sev=minor dir=c:\test\ file=@ age_threshold=1 message_age=41 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri 
+app=faAnyA4t3 sev=minor dir=c:\test\ file=@ age_threshold=1 message_age=42 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faAnyA5t1 sev=minor dir=c:\test\ file=@ age_threshold=1 message_age=43 dayofweek=mon, tue, wed, thu, fri 
+app=faAnyA5t2 sev=minor dir=c:\test\ file=@ age_threshold=1 message_age=44 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faAnyA6t1 sev=minor dir=c:\test\ file=@ age_threshold=1 message_age=45 error_times=3
+ 
+app=faAnyB1t1 sev=minor dir=c:\test\ file=@ age_threshold=1 description=test case faAnyB1t1 
+app=faAnyB2t1 sev=minor dir=c:\test\ file=@ age_threshold=1 description=test case faAnyB2t1 action=email, john.nichols@barclaysglobal.com, faAnyB2t1 
+app=faAnyB2t2 sev=minor dir=c:\test\ file=@ age_threshold=1 description=test case faAnyB2t2 action=email, john.nichols@barclaysglobal.com, faAnyB2t2 start=08 stop=17 
+app=faAnyB2t3 sev=minor dir=c:\test\ file=@ age_threshold=1 description=test case faAnyB2t3 action=email, john.nichols@barclaysglobal.com, faAnyB2t3 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri 
+app=faAnyB2t4 sev=minor dir=c:\test\ file=@ age_threshold=1 description=test case faAnyB2t4 action=email, john.nichols@barclaysglobal.com, faAnyB2t4 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faAnyB3t1 sev=minor dir=c:\test\ file=@ age_threshold=1 description=test case faAnyB3t1 start=08 stop=17 
+app=faAnyB3t2 sev=minor dir=c:\test\ file=@ age_threshold=1 description=test case faAnyB3t2 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri 
+app=faAnyB3t3 sev=minor dir=c:\test\ file=@ age_threshold=1 description=test case faAnyB3t3 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faAnyB4t1 sev=minor dir=c:\test\ file=@ age_threshold=1 description=test case faAnyB4t1 dayofweek=mon, tue, wed, thu, fri 
+app=faAnyB4t2 sev=minor dir=c:\test\ file=@ age_threshold=1 description=test case faAnyB4t2 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faAnyB5t1 sev=minor dir=c:\test\ file=@ age_threshold=1 description=test case faAnyB5t1 error_times=3
+ 
+app=faAnyC1t1 sev=minor dir=c:\test\ file=@ age_threshold=1 action=email, john.nichols@barclaysglobal.com, faAnyC1t1 
+app=faAnyC2t1 sev=minor dir=c:\test\ file=@ age_threshold=1 action=email, john.nichols@barclaysglobal.com, faAnyC2t1 start=08 stop=17 
+app=faAnyC2t2 sev=minor dir=c:\test\ file=@ age_threshold=1 action=email, john.nichols@barclaysglobal.com, faAnyC2t2 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri 
+app=faAnyC2t3 sev=minor dir=c:\test\ file=@ age_threshold=1 action=email, john.nichols@barclaysglobal.com, faAnyC2t3 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faAnyC3t1 sev=minor dir=c:\test\ file=@ age_threshold=1 action=email, john.nichols@barclaysglobal.com, faAnyC3t1 dayofweek=mon, tue, wed, thu, fri 
+app=faAnyC3t2 sev=minor dir=c:\test\ file=@ age_threshold=1 action=email, john.nichols@barclaysglobal.com, faAnyC3t2 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faAnyC4t1 sev=minor dir=c:\test\ file=@ age_threshold=1 action=email, john.nichols@barclaysglobal.com, faAnyC4t1 error_times=3
+ 
+app=faAnyD1t1 sev=minor dir=c:\test\ file=@ age_threshold=1 start=08 stop=17 
+app=faAnyD2t1 sev=minor dir=c:\test\ file=@ age_threshold=1 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri 
+app=faAnyD2t2 sev=minor dir=c:\test\ file=@ age_threshold=1 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faAnyD3t1 sev=minor dir=c:\test\ file=@ age_threshold=1 start=08 stop=17 error_times=3
+ 
+app=faAnyE1t1 sev=minor dir=c:\test\ file=@ age_threshold=1 dayofweek=mon, tue, wed, thu, fri 
+app=faAnyE2t1 sev=minor dir=c:\test\ file=@ age_threshold=1 dayofweek=mon, tue, wed, thu, fri error_times=3
+ 
+app=faAnyF1t1 sev=minor dir=c:\test\ file=@ age_threshold=1 error_times=3
+
+ 
+app=faAllA1t1 sev=minor dir=c:\test\ file=* age_threshold=1 message_age=30 
+app=faAllA2t1 sev=minor dir=c:\test\ file=* age_threshold=1 message_age=31 description=test case faAllA2t1 
+app=faAllA2t2 sev=minor dir=c:\test\ file=* age_threshold=1 message_age=32 description=test case faAllA2t2 action=email, john.nichols@barclaysglobal.com, faAllA2t2 
+app=faAllA2t3 sev=minor dir=c:\test\ file=* age_threshold=1 message_age=33 description=test case faAllA2t3 action=email, john.nichols@barclaysglobal.com, faAllA2t3 start=08 stop=17 
+app=faAllA2t4 sev=minor dir=c:\test\ file=* age_threshold=1 message_age=34 description=test case faAllA2t4 action=email, john.nichols@barclaysglobal.com, faAllA2t4 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri 
+app=faAllA2t5 sev=minor dir=c:\test\ file=* age_threshold=1 message_age=35 description=test case faAllA2t5 action=email, john.nichols@barclaysglobal.com, faAllA2t5 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faAllA3t1 sev=minor dir=c:\test\ file=* age_threshold=1 message_age=36 action=email, john.nichols@barclaysglobal.com, faAllA3t1 
+app=faAllA3t2 sev=minor dir=c:\test\ file=* age_threshold=1 message_age=37 action=email, john.nichols@barclaysglobal.com, faAllA3t2 start=08 stop=17 
+app=faAllA3t3 sev=minor dir=c:\test\ file=* age_threshold=1 message_age=38 action=email, john.nichols@barclaysglobal.com, faAllA3t3 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri 
+app=faAllA3t4 sev=minor dir=c:\test\ file=* age_threshold=1 message_age=39 action=email, john.nichols@barclaysglobal.com, faAllA3t4 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faAllA4t1 sev=minor dir=c:\test\ file=* age_threshold=1 message_age=40 start=08 stop=17 
+app=faAllA4t2 sev=minor dir=c:\test\ file=* age_threshold=1 message_age=41 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri 
+app=faAllA4t3 sev=minor dir=c:\test\ file=* age_threshold=1 message_age=42 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faAllA5t1 sev=minor dir=c:\test\ file=* age_threshold=1 message_age=43 dayofweek=mon, tue, wed, thu, fri 
+app=faAllA5t2 sev=minor dir=c:\test\ file=* age_threshold=1 message_age=44 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faAllA6t1 sev=minor dir=c:\test\ file=* age_threshold=1 message_age=45 error_times=3
+ 
+app=faAllB1t1 sev=minor dir=c:\test\ file=* age_threshold=1 description=test case faAllB1t1 
+app=faAllB2t1 sev=minor dir=c:\test\ file=* age_threshold=1 description=test case faAllB2t1 action=email, john.nichols@barclaysglobal.com, faAllB2t1 
+app=faAllB2t2 sev=minor dir=c:\test\ file=* age_threshold=1 description=test case faAllB2t2 action=email, john.nichols@barclaysglobal.com, faAllB2t2 start=08 stop=17 
+app=faAllB2t3 sev=minor dir=c:\test\ file=* age_threshold=1 description=test case faAllB2t3 action=email, john.nichols@barclaysglobal.com, faAllB2t3 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri 
+app=faAllB2t4 sev=minor dir=c:\test\ file=* age_threshold=1 description=test case faAllB2t4 action=email, john.nichols@barclaysglobal.com, faAllB2t4 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faAllB3t1 sev=minor dir=c:\test\ file=* age_threshold=1 description=test case faAllB3t1 start=08 stop=17 
+app=faAllB3t2 sev=minor dir=c:\test\ file=* age_threshold=1 description=test case faAllB3t2 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri 
+app=faAllB3t3 sev=minor dir=c:\test\ file=* age_threshold=1 description=test case faAllB3t3 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faAllB4t1 sev=minor dir=c:\test\ file=* age_threshold=1 description=test case faAllB4t1 dayofweek=mon, tue, wed, thu, fri 
+app=faAllB4t2 sev=minor dir=c:\test\ file=* age_threshold=1 description=test case faAllB4t2 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faAllB5t1 sev=minor dir=c:\test\ file=* age_threshold=1 description=test case faAllB5t1 error_times=3
+ 
+app=faAllC1t1 sev=minor dir=c:\test\ file=* age_threshold=1 action=email, john.nichols@barclaysglobal.com, faAllC1t1 
+app=faAllC2t1 sev=minor dir=c:\test\ file=* age_threshold=1 action=email, john.nichols@barclaysglobal.com, faAllC2t1 start=08 stop=17 
+app=faAllC2t2 sev=minor dir=c:\test\ file=* age_threshold=1 action=email, john.nichols@barclaysglobal.com, faAllC2t2 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri 
+app=faAllC2t3 sev=minor dir=c:\test\ file=* age_threshold=1 action=email, john.nichols@barclaysglobal.com, faAllC2t3 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faAllC3t1 sev=minor dir=c:\test\ file=* age_threshold=1 action=email, john.nichols@barclaysglobal.com, faAllC3t1 dayofweek=mon, tue, wed, thu, fri 
+app=faAllC3t2 sev=minor dir=c:\test\ file=* age_threshold=1 action=email, john.nichols@barclaysglobal.com, faAllC3t2 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faAllC4t1 sev=minor dir=c:\test\ file=* age_threshold=1 action=email, john.nichols@barclaysglobal.com, faAllC4t1 error_times=3
+ 
+app=faAllD1t1 sev=minor dir=c:\test\ file=* age_threshold=1 start=08 stop=17 
+app=faAllD2t1 sev=minor dir=c:\test\ file=* age_threshold=1 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri 
+app=faAllD2t2 sev=minor dir=c:\test\ file=* age_threshold=1 start=08 stop=17 dayofweek=mon, tue, wed, thu, fri error_times=3
+app=faAllD3t1 sev=minor dir=c:\test\ file=* age_threshold=1 start=08 stop=17 error_times=3
+ 
+app=faAllE1t1 sev=minor dir=c:\test\ file=* age_threshold=1 dayofweek=mon, tue, wed, thu, fri 
+app=faAllE2t1 sev=minor dir=c:\test\ file=* age_threshold=1 dayofweek=mon, tue, wed, thu, fri error_times=3
+ 
+app=faAllF1t1 sev=minor dir=c:\test\ file=* age_threshold=1 error_times=3
+
+ 
